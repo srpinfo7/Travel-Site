@@ -458,16 +458,31 @@ h1 ,h2 ,h3{
 .form-btn
 {
     display: block;
+    border-radius: 10px;
     margin: 0 auto;
-    padding: 0.5em 3em;
+    padding: 0.5em 1.5em;
     font-size: 1.8rem;
     text-transform: uppercase;
     background:#ee4758;
     color: #fff;
-    outline: none;
-    border: none;
+    border: transparent solid 2px;
     cursor: pointer;
+    transition: 0.5s ease-in;
 }
+
+button:hover {
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+  }
+
+input:focus,textarea:focus
+{
+    outline-color: red;
+}
+
 
 /* ******************** Media Queries ***************** */
 
